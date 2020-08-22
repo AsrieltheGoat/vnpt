@@ -1,0 +1,435 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+      <link rel="stylesheet" href="stylemain.css" type="text/css">
+         <link rel="stylesheet" href="colors.css" type="text/css">
+            <meta http-equiv="Pragma" content="no-cache">
+            <title></title>
+            <!-- base href="http://192.168.1.1/info.html" -->
+            <script language="javascript">
+<!-- hide
+var ip6DftGwIfInfo = 'type=PPPoE&ipVer=1&ipIfcDftGw=ppp0.4&ip6ConnStat=Connected&ip6OnlineDur=1598127512&ip6LLA=fe80::78be:f3ba:3bb4:fe5a/10&ip6GUA=2001:0ee0:4881:7d38:78be:f3ba:3bb4:fe5a/64&ip6IfcDftGw=ppp0.4&ip6DftGw=fe80::32b6:4fff:fe36:9389';
+var ipDftGwIfInfo = 'type=PPPoE&ipVer=1&ipConnStat=Connected&ipOnlineDur=1598127512&ipAddr=14.171.20.232&ipMask=255.255.255.255&ipIfcDftGw=ppp0.4&ipDftGw=123.29.4.114';
+
+function infoGet (info, field)
+{
+    var result = '';
+    var fieldLst = info.split ("&");
+
+    for (i = 0; i < fieldLst.length; i++)
+    {
+        var tmp = fieldLst[i].split ("=");
+        if (field == tmp[0])
+        {
+            result = tmp[1];
+            break;
+        }
+    }
+
+    if ('ipVer' == field)
+    {
+        if ('1' == result)
+        {
+            result = 'IPv4&IPv6 (Dual Stack)';
+        }
+        else if ('2' == result)
+        {
+            result = 'IPv6 Only';
+        }
+        else
+        {
+            result = 'IPv4 Only';
+        }
+    }
+    else if ('ipOnlineDur' == field || 'ip6OnlineDur' == field)
+    {
+        result += ' secs';
+    }
+
+    return result;
+}
+// done hiding -->
+            </script>
+   </head>
+   <body>
+      <blockquote>
+         <form><table>
+            <tbody><tr><td class="h1">Device Info</td></tr>
+               </tbody></table><br><table style="width:500" cellspacing="0" cellpadding="3" border="1">
+			   
+               <tbody><tr>
+                  <td class="hd" width="50%">Product name:</td>
+                  <td width="50%">iGate GW040</td>
+               </tr>
+
+<script language="javascript">
+<!-- hide
+var numCpuThreads = '2';
+if ( numCpuThreads == 2 ) {
+  document.writeln("               <tr>");
+  document.writeln("                  <td class='hd'>Symmetric CPU Threads:</td>");
+  document.writeln("                  <td>2</td>");
+  document.writeln("               </tr>");
+}
+// done hiding -->
+</script>               <tr>
+                  <td class="hd">Symmetric CPU Threads:</td>
+                  <td>2</td>
+               </tr>
+
+
+               <tr>
+                  <td class="hd">Build Timestamp:</td>
+                  <td>180125_1630</td>
+               </tr>
+               <tr>
+                  <td class="hd">Software Version:</td>
+                  <td>G6.16A.04RTMP3</td>
+               </tr>
+
+<script language="javascript">
+<!-- hide
+var buildAtm = '0';
+var buildPtm = '0';
+if ( buildAtm == 1 || buildPtm == 1 ) {
+  document.write("<tr>");
+  document.write("<td class='hd'>DSL PHY and Driver Version:</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+}
+// done hiding -->
+</script>
+
+<script language="javascript">
+<!-- hide
+if ('0' == '1') {
+  document.writeln("               <tr>");
+  document.writeln("                  <td class='hd'>Homeplug Driver Version:</td>");
+  document.writeln("                  <td></td>");
+  document.writeln("               </tr>");
+}
+// done hiding -->
+</script>
+
+<script language="javascript">
+<!-- hide
+var buildMoca = '0';
+if ( buildMoca == 1 ) {
+  document.writeln("               <tr>");
+  document.writeln("                  <td class='hd'>Moca Version:</td>");
+  document.writeln("                  <td></td>");
+  document.writeln("               </tr>");
+}
+// done hiding -->
+</script>
+
+<script language="javascript">
+<!-- hide
+var voice = '';
+if ( voice == 'SIP' || voice == 'MGCP' ) {
+  document.writeln("               <tr>");
+  document.writeln("                  <td class='hd'>Voice Service Version:</td>");
+  document.writeln("                  <td></td>");
+  document.writeln("               </tr>");
+}
+// done hiding -->
+</script>
+
+               <tr>
+                  <td class="hd">Uptime:</td>
+                  <td>1D 19H 48M 6S</td>
+               </tr>
+
+        </tbody></table>
+            <br>
+            This information reflects the current status of your WAN connection.<br>
+            <br>
+            <table style="width:500" cellspacing="0" cellpadding="3" border="1">
+               <tbody><tr>
+               
+<script language="javascript">
+<!-- hide
+var VdslIncluded = '';
+var DslBondingEnabled = '';
+if ( DslBondingEnabled == 1 ) {
+  document.write("<tr>");
+  document.write("<td class='hd'>Traffic Type:</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+  document.write("<tr>");
+  document.write("<td class='hd'>Aggregate Line Rate - Upstream (Kbps):</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+  document.write("<tr>");
+  document.write("<td class='hd'>Aggregate Line Rate - Downstream (Kbps):</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+}
+else if ( VdslIncluded == 1 ) {
+  document.write("<tr>");
+  document.write("<td class='hd'>B0 Traffic Type:</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+  document.write("<tr>");
+  document.write("<td class='hd'>B0 Line Rate - Upstream (Kbps):</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+  document.write("<tr>");
+  document.write("<td class='hd'>B0 Line Rate - Downstream (Kbps):</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+  document.write("<tr>");
+  document.write("<td class='hd'>B1 Traffic Type:</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+  document.write("<tr>");
+  document.write("<td class='hd'>B1 Line Rate - Upstream (Kbps):</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+  document.write("<tr>");
+  document.write("<td class='hd'>B1 Line Rate - Downstream (Kbps):</td>");
+  document.write("<td></td>");
+  document.write(" </tr>");
+}
+else if ( buildAtm == 1 || buildPtm == 1 ) {
+  document.write("<tr>");
+  document.write("<td class='hd'>Line Rate - Upstream (Kbps):</td>");
+  document.write("<td></td>");
+  document.write("</tr>" );
+  document.write("<tr>");
+  document.write("<td class='hd'>Line Rate - Downstream (Kbps):</td>");
+  document.write("<td></td>");
+  document.write("</tr>");
+}
+
+// done hiding -->
+</script>
+<script language="javascript">
+<!-- hide
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>Type</td>");
+document.writeln ("<td>" + infoGet (ipDftGwIfInfo, 'type') + "</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>Interface Name</td>");
+document.writeln ("<td>" + infoGet (ipDftGwIfInfo, 'ipIfcDftGw') + "</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>IP Version</td>");
+document.writeln ("<td>" + infoGet (ipDftGwIfInfo, 'ipVer') + "</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>Connection Status</td>");
+document.writeln ("<td>" + infoGet (ipDftGwIfInfo, 'ipConnStat') + "</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>Online Duration</td>");
+document.writeln ("<td>" + infoGet (ipDftGwIfInfo, 'ipOnlineDur') + "</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>IP Address</td>");
+document.writeln ("<td>" + infoGet (ipDftGwIfInfo, 'ipAddr') + "</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>Subnet Mask</td>");
+document.writeln ("<td>" + infoGet (ipDftGwIfInfo, 'ipMask') + "</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>Default Gateway</td>");
+document.writeln ("<td>" + infoGet (ipDftGwIfInfo, 'ipDftGw') + "</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>Primary DNS Server:</td>");
+document.writeln ("<td>123.23.23.23</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>Secondary DNS Server</td>");
+document.writeln ("<td>123.26.26.26</td>");
+document.writeln ("</tr>");
+document.writeln ("<tr>");
+document.writeln ("<td class='hd' width='50%'>LAN IP Address</td>");
+document.writeln ("<td>192.168.1.1</td>");
+document.writeln ("</tr>");
+// done hiding -->
+</script></tr><tr>
+<td class="hd" width="50%">Type</td>
+<td>PPPoE</td>
+</tr>
+<tr>
+<td class="hd" width="50%">Interface Name</td>
+<td>ppp0.4</td>
+</tr>
+<tr>
+<td class="hd" width="50%">IP Version</td>
+<td>IPv4&amp;IPv6 (Dual Stack)</td>
+</tr>
+<tr>
+<td class="hd" width="50%">Connection Status</td>
+<td>Connected</td>
+</tr>
+<tr>
+<td class="hd" width="50%">Online Duration</td>
+<td>1598127512 secs</td>
+</tr>
+<tr>
+<td class="hd" width="50%">IP Address</td>
+<td>14.171.20.232</td>
+</tr>
+<tr>
+<td class="hd" width="50%">Subnet Mask</td>
+<td>255.255.255.255</td>
+</tr>
+<tr>
+<td class="hd" width="50%">Default Gateway</td>
+<td>123.29.4.114</td>
+</tr>
+<tr>
+<td class="hd" width="50%">Primary DNS Server:</td>
+<td>123.23.23.23</td>
+</tr>
+<tr>
+<td class="hd" width="50%">Secondary DNS Server</td>
+<td>123.26.26.26</td>
+</tr>
+<tr>
+<td class="hd" width="50%">LAN IP Address</td>
+<td>192.168.1.1</td>
+</tr>
+
+<script language="javascript">
+<!-- hide
+var buildSntp = '1';
+var enblSntp = '1';
+var proto = 'MER';
+
+if ( buildSntp == '1' && enblSntp == '1' && proto != 'Bridge' ) {
+  document.writeln("               <tr>");
+  document.writeln("                  <td class='hd'>Date/Time:</td>");
+  document.writeln("                  <td>Sat Aug 22 20:19:02 2020</td>");
+  document.writeln("               </tr>");
+}
+// done hiding -->
+</script>               <tr>
+                  <td class="hd">Date/Time:</td>
+                  <td>Sat Aug 22 20:19:02 2020</td>
+               </tr>
+
+            </tbody></table>
+            
+<script language="javascript">
+<!-- hide
+if ('1' == '1') 
+{
+    document.writeln ("<table>");
+    document.writeln ("    <br></b>IPv6 Information<br><br>");
+    document.writeln ("    <table border='1' cellpadding='3' cellspacing='0' style='width:500'>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>Type</td>");
+    document.writeln ("            <td>" + infoGet (ip6DftGwIfInfo, 'type') + "</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>Interface Name</td>");
+    document.writeln ("            <td>" + infoGet (ip6DftGwIfInfo, 'ip6IfcDftGw') + "</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>IP Version</td>");
+    document.writeln ("            <td>" + infoGet (ip6DftGwIfInfo, 'ipVer') + "</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>Connection Status</td>");
+    document.writeln ("            <td>" + infoGet (ip6DftGwIfInfo, 'ip6ConnStat') + "</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>Online Duration</td>");
+    document.writeln ("            <td>" + infoGet (ip6DftGwIfInfo, 'ip6OnlineDur') + "</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>IPv6 Address</td>");
+    document.writeln ("            <td>" + infoGet (ip6DftGwIfInfo, 'ip6GUA') + "</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>IPv6 Address Link Local</td>");
+    document.writeln ("            <td>" + infoGet (ip6DftGwIfInfo, 'ip6LLA') + "</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>Default Router</td>");
+    document.writeln ("            <td>" + infoGet (ip6DftGwIfInfo, 'ip6DftGw') + "</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>Primary DNS6 Server</td>");
+    document.writeln ("            <td>2606:4700:4700::1111</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>Secondary DNS Server</td>");
+    document.writeln ("            <td>2606:4700:4700::1001</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>WAN Delegated Prefix</td>");
+    document.writeln ("            <td>2001:ee0:488d:f470::/60</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("        <tr>");
+    document.writeln ("            <td class='hd' with='50%'>LAN Delegated IPv6 Address</td>");
+    document.writeln ("            <td>2001:ee0:488d:f470:a265:18ff:fe60:3ef3/64</td>");
+    document.writeln ("        </tr>");
+    document.writeln ("    </table>");
+    document.writeln ("</table>");
+}
+// done hiding -->
+</script><br>IPv6 Information<br><br><table>
+    
+    </table><table style="width:500" cellspacing="0" cellpadding="3" border="1">
+        <tbody><tr>
+            <td class="hd" with="50%">Type</td>
+            <td>PPPoE</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">Interface Name</td>
+            <td>ppp0.4</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">IP Version</td>
+            <td>IPv4&amp;IPv6 (Dual Stack)</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">Connection Status</td>
+            <td>Connected</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">Online Duration</td>
+            <td>1598127512 secs</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">IPv6 Address</td>
+            <td>2001:0ee0:4881:7d38:78be:f3ba:3bb4:fe5a/64</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">IPv6 Address Link Local</td>
+            <td>fe80::78be:f3ba:3bb4:fe5a/10</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">Default Router</td>
+            <td>fe80::32b6:4fff:fe36:9389</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">Primary DNS6 Server</td>
+            <td>2606:4700:4700::1111</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">Secondary DNS Server</td>
+            <td>2606:4700:4700::1001</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">WAN Delegated Prefix</td>
+            <td>2001:ee0:488d:f470::/60</td>
+        </tr>
+        <tr>
+            <td class="hd" with="50%">LAN Delegated IPv6 Address</td>
+            <td>2001:ee0:488d:f470:a265:18ff:fe60:3ef3/64</td>
+        </tr>
+    </tbody></table>
+
+
+         </form>
+      </blockquote>
+   
+
+</body></html>
