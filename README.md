@@ -4,13 +4,13 @@ I recreate that just for fun
 
 ## Clone
 
-Use the clone option or type 
+Use the download option or type (if you already installed git)
 
 ```bash
 git clone https://github.com/AsrieltheGoat/vnpt.git
 ```
 
-to clone the project
+in the terminal to clone the project
 
 ## You might ask
 
